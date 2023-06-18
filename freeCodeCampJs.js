@@ -78,3 +78,149 @@ const myArray = [["dog"], ["cat"]];
 //Access Array Data with Indexes
 const myArray = [50, 60, 70];
 let myData = myArray[0]
+
+// Arrays are mutable 
+const myArray = [18, 64, 99];
+// Only change code below this line
+myArray[0] = 45
+
+
+//Access Multi-Dimensional Arrays With Indexes
+const myArray = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [[10, 11, 12], 13, 14],
+];
+
+const myData = myArray[2][1];
+
+
+// Manipulate Arrays With push Method
+const myArray = [["John", 23], ["cat", 2]];
+
+// Only change code below this line
+myArray.push(["dog", 3])
+
+// Setup
+const myArray = [["John", 23], ["cat", 2]];
+
+// Only change code below this line
+let removedFromMyArray = myArray.pop()
+
+
+// Manipulate Arrays With pop Method
+const myArray = [["John", 23], ["cat", 2]];
+// Only change code below this line
+let removedFromMyArray = myArray.pop()
+
+
+// Manipulate Arrays With shift Method
+const myArray = [["John", 23], ["dog", 3]];
+// Only change code below this line
+let removedFromMyArray = myArray.shift()
+
+// Manipulate Arrays With unshift Method
+const myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+
+// Only change code below this line
+myArray.unshift(["Paul", 35])
+
+//Shopping List
+const myList = [
+  ["Chocolate Bar", 15],
+  ["Coke", 12],
+  ["Chips", 10],
+  ["Gum", 5],
+  ["Peanuts", 8],
+  ["Candy", 20]
+];
+
+
+
+//Passing Values to Functions with Arguments
+function functionWithArgs(par1, par2){
+  console.log(par1 + par2);
+}
+
+functionWithArgs(1,2)
+
+
+
+//Local Scope and Functions
+function myLocalScope() {
+  // Only change code below this line
+let myVar; 
+  console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
+
+// Run and check the console
+// myVar is not defined outside of myLocalScope
+console.log('outside myLocalScope', myVar);
+
+
+// Global vs. Local Scope in Functions
+const outerWear = "T-Shirt";
+
+function myOutfit() {
+  // Only change code below this line
+let outerWear = "sweater"
+  // Only change code above this line
+  return outerWear;
+}
+
+myOutfit();
+
+
+
+
+
+//Understanding Undefined Value returned from a Function
+// Setup
+let sum = 0;
+
+function addThree() {
+  sum = sum + 3;
+}
+
+// Only change code below this line
+function addFive(){
+  sum = sum + 5
+}
+
+// Only change code above this line
+
+addThree();
+addFive();
+
+
+// Assignment with a Returned Value
+let processed = 0;
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
+
+// Only change code below this line
+processed = processArg(7)
+
+
+function nextInLine(arr, item) {
+  // Only change code below this line
+  arr.push(item)
+  item = arr.shift()
+  return item;
+  // Only change code above this line
+}
+
+
+
+
+// Stand in Line
+let testArr = [1, 2, 3, 4, 5];
+// Display code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
