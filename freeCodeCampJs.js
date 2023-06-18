@@ -48,3 +48,33 @@ const lastName = "Lovelace";
 // Only change code below this line
 const lastLetterOfLastName = lastName[lastName.length - 1]; // Change this line
 
+
+// Use Bracket Notation to Find the Nth-to-Last Character in a String
+const lastName = "Lovelace";
+// Only change code below this line
+const secondToLastLetterOfLastName = lastName[lastName.length - 2]; // Change this line
+
+//Word Blanks
+const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
+
+// Only change code below this line
+const wordBlanks = "The animal that was a " + myAdjective + " " +  myNoun + " " + myVerb + " " + myAdverb ; // Change this line
+// Only change code above this line
+
+
+
+// Use an array to store more than one thing in a variable 
+const myArray = ["hello", 5];
+
+
+
+// Nest one Array within Another Array
+const myArray = [["dog"], ["cat"]];
+
+
+//Access Array Data with Indexes
+const myArray = [50, 60, 70];
+let myData = myArray[0]
