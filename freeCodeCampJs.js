@@ -233,3 +233,40 @@ function welcomeToBooleans() {
 
   // Only change code above this line
 }
+
+
+function trueOrFalse(wasThatTrue) {
+  // Only change code below this line
+if(wasThatTrue == true){
+  return "Yes, that was true";
+}
+return "No, that was false"
+  // Only change code above this line
+
+}
+
+//Comparison with the Equality Operator
+
+// STRiCT Equality
+function testStrict(val) {
+  if (val === 7) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+testStrict(10);
+
+function testGreaterOrEqual(val) {
+  if (val >= 20) {  // Change this line
+    return "20 or Over";
+  }
+
+  if (val >= 10) {  // Change this line
+    return "10 or Over";
+  }
+
+  return "Less than 10";
+}
+
+testGreaterOrEqual(10);
